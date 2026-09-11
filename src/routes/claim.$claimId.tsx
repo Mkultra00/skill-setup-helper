@@ -6,13 +6,13 @@ import { CLAIM_STEPS, getEntitlement, type StepState } from "@/lib/claimant-data
 export const Route = createFileRoute("/claim/$claimId")({
   head: () => ({
     meta: [
-      { title: "Your claim — ClaimMedia" },
+      { title: "Your claim — F You Money" },
       {
         name: "description",
         content:
-          "Follow your claim step by step. ClaimMedia prepares everything; you read it, sign it and send it yourself.",
+          "Follow your claim step by step. F You Money prepares everything; you read it, sign it and send it yourself.",
       },
-      { property: "og:title", content: "Your claim — ClaimMedia" },
+      { property: "og:title", content: "Your claim — F You Money" },
       {
         property: "og:description",
         content: "Everything prepared for you, with the signature left where it belongs.",
@@ -47,7 +47,7 @@ function Claim() {
       <header className="border-b border-border">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-5">
           <Link to="/" className="font-display text-2xl tracking-tight">
-            ClaimMedia
+            F You Money
           </Link>
           <Link to="/briefing" className="text-sm text-muted-foreground hover:text-foreground">
             ← Back to briefing
