@@ -144,5 +144,15 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
   }
+}
+
+@utility rule-grid {
+  background-image: linear-gradient(
+    to bottom,
+    color-mix(in oklch, var(--color-border) 60%, transparent) 1px,
+    transparent 1px
+  );
+  background-size: 100% 2rem;
 }
