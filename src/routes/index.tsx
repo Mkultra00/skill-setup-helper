@@ -1,21 +1,22 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { TRACKS } from "@/lib/claimant-data";
+import mascotAsset from "@/assets/unicorn-mascot.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "ClaimMedia — find money that is already yours" },
+      { title: "F You Money — find money that is already yours" },
       {
         name: "description",
         content:
-          "ClaimMedia finds settlements and refunds you may be owed, prepares the claim for you, and leaves the signature where it belongs: with you.",
+          "F You Money finds settlements and refunds you may be owed, prepares the claim for you, and leaves the signature where it belongs: with you.",
       },
-      { property: "og:title", content: "ClaimMedia — find money that is already yours" },
+      { property: "og:title", content: "F You Money — find money that is already yours" },
       {
         property: "og:description",
         content:
-          "ClaimMedia finds settlements and refunds you may be owed and prepares the claim. You read it, sign it, and the payout comes straight to you.",
+          "F You Money finds settlements and refunds you may be owed and prepares the claim. You read it, sign it, and the payout comes straight to you.",
       },
     ],
   }),
@@ -27,7 +28,14 @@ function Discover() {
     <main className="min-h-screen bg-background">
       <header className="border-b border-border">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-5">
-          <span className="font-display text-2xl tracking-tight">ClaimMedia</span>
+          <div className="flex items-center gap-3">
+            <img
+              src={mascotAsset.url}
+              alt="F You Money unicorn mascot"
+              className="h-10 w-auto"
+            />
+            <span className="font-display text-2xl tracking-tight">F You Money</span>
+          </div>
           <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
             Seraph Systems
           </span>
@@ -42,7 +50,7 @@ function Discover() {
           There is money set aside with your name on it. Most of it goes unclaimed.
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-          ClaimMedia searches for what you are owed, reads the fine print, and fills in the claim.
+          F You Money searches for what you are owed, reads the fine print, and fills in the claim.
           Then it stops and hands it to you. You read it, you sign it, and the payout comes
           straight to you — never through us.
         </p>
