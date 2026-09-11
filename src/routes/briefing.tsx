@@ -6,13 +6,13 @@ import { ENTITLEMENTS, type Entitlement } from "@/lib/claimant-data";
 export const Route = createFileRoute("/briefing")({
   head: () => ({
     meta: [
-      { title: "Your briefing — ClaimMedia" },
+      { title: "Your briefing — F You Money" },
       {
         name: "description",
         content:
           "A ranked list of settlements you may be owed, each with what it is, why you qualify, what it is worth and when it closes.",
       },
-      { property: "og:title", content: "Your briefing — ClaimMedia" },
+      { property: "og:title", content: "Your briefing — F You Money" },
       {
         property: "og:description",
         content:
@@ -48,7 +48,7 @@ function Briefing() {
       <header className="border-b border-border">
         <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-5">
           <Link to="/" className="font-display text-2xl tracking-tight">
-            ClaimMedia
+            F You Money
           </Link>
           <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
             Class actions
