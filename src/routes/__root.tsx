@@ -77,16 +77,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Claimant" },
+      { title: "ClaimMedia" },
       {
         name: "description",
-        content: "Find what you are owed. Claimant prepares the claim; you sign it.",
+        content: "Find what you are owed. ClaimMedia prepares the claim; you sign it.",
       },
       { name: "author", content: "Seraph Systems" },
-      { property: "og:title", content: "Claimant" },
+      { property: "og:title", content: "ClaimMedia" },
       {
         property: "og:description",
-        content: "Find what you are owed. Claimant prepares the claim; you sign it.",
+        content: "Find what you are owed. ClaimMedia prepares the claim; you sign it.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
