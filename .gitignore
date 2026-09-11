@@ -30,3 +30,19 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local secrets and private runtime state
+.env
+.env.*
+!.env.example
+.claimant/
+.sites-runtime/
+__pycache__/
+.venv/
+.pytest_cache/
+
+# Local credentials and private workspace records
+playwright-report/
+test-results/
+
+.venv-agent/
